@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class player_mov : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float forwardF = 200f;
-    public float moveSpeed;
+    public float moveSpeed = 5f;
 
     void Start() { 
     }
@@ -25,6 +23,12 @@ public class player_mov : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.DownArrow) || Input.GetKey("s")){
             transform.Translate(new Vector3 (moveSpeed, 0, 0) * Time.deltaTime);
+        }
+        if(Input.GetKey("space")){
+            transform.Translate(new Vector3 (0, moveSpeed, 0) * Time.deltaTime);
+        }
+        if(Input.GetKey("r")){
+            transform.eulerAngles = new Vector3 (0, 0, 0);
         }
     }
 }
