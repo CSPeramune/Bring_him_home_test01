@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class player_mov : MonoBehaviour
 {
+    public Rigidbody rb;
     public float moveSpeed = 5f;
+    public float fixedRotetion = 0f;
+    public float stop = 0f;
 
     void Start() { 
     }
@@ -12,6 +15,9 @@ public class player_mov : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //transform.eulerAngles = new Vector3 (fixedRotetion, 0, 0);
+        rb.AddForce(0, 0, 0);
+        
         if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey("a")){
             transform.Translate(new Vector3 (0, 0, -moveSpeed) * Time.deltaTime);
         }
