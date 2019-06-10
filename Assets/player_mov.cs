@@ -15,7 +15,7 @@ public class player_mov : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //transform.eulerAngles = new Vector3 (fixedRotetion, 0, 0);
+        transform.eulerAngles = new Vector3 (fixedRotetion, 0, 0);
         rb.AddForce(0, 0, 0);
         
         if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey("a")){
