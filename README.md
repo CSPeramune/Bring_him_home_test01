@@ -1,5 +1,5 @@
 # Bring_him_home_test01
-<<Studying game dev in Unity game engine>>
+Studying game dev in Unity game engine
 
 Download BHH_game_file_u0.001.rar file to play the game.
 
