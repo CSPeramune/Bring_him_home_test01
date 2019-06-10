@@ -36,5 +36,8 @@ public class player_mov : MonoBehaviour
         if(Input.GetKey("r")){
             transform.eulerAngles = new Vector3 (0, 0, 0);
         }
+        if(Input.GetKey("e")){
+            transform.position = new Vector3 (0, 1, 0);
+        }
     }
 }
